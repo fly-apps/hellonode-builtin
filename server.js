@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get(["/", "/to/:name"], (req, res) => {
+app.get(["/", "/:name"], (req, res) => {
   greeting = "<h1>Hello From Node on Fly!</h1>";
   name = req.params["name"];
   if (name) {
@@ -12,4 +12,5 @@ app.get(["/", "/to/:name"], (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
+app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`))
+
