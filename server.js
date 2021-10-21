@@ -12,5 +12,4 @@ app.get(["/", "/:name"], (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`))
-
+app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
